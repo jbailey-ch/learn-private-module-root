@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 module "s3-webapp" {
-  source  = "app.terraform.io/hashicorp-learn/s3-webapp/aws"
+  source  = "app.terraform.io/app/cyberhill/registry/modules/private/cyberhill/s3-webapp/aws/1.0.0"
   name        = var.name
   region = var.region
   prefix = var.prefix
